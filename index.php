@@ -1,6 +1,6 @@
 <?php   
  session_start();  
- $connect = mysqli_connect("localhost", "root", "", "pizzeria");  
+ include 'config.php';
  ?>  
  <!DOCTYPE html>  
  <html>  
