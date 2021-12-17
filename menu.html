@@ -1,0 +1,291 @@
+<html>
+    <head>
+        <title>MENU</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="css-col.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+    </head>
+    <body >
+        <section id="menu">
+        <div class="container" style="width: 1000px;">
+            <h2 class="menu-h2">Food Items</h2>
+            <h1>Popular <span>Menu</span></h1>
+              <div class="row row1">
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6 cols">
+                  <img src="img/Farmhouse.jpg" class="img-fluid" alt="...">
+                  <h5>Farmhouse Pizza</h5>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6 cols">
+                  <img src="img/chunky-chicken.png" class="img-fluid" alt="loading ...">
+                  <h5>Chunky Chicken Pizza</h5>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6 cols">
+                  <img src="img/Corn_&_Cheese.jpg" class="img-fluid" alt="loading ...">
+                  <h5>Corn & Cheese Pizza</h5>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6 cols">
+                  <img src="img/IndianTandooriPaneer.jpg" class="img-fluid" alt="loading ...">
+                  <h5>Tandoori Paneer Pizza</h5>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6 cols">
+                  <img src="img/Paneer_Makhni.jpg" class="img-fluid" alt="loading ...">
+                  <h5>Paneer Makhni Pizza</h5>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6 cols">
+                  <img src="img/Peppy_Paneer.jpg" class="img-fluid" alt="loading ...">
+                  <h5>Peppy Paneer Pizza</h5>
+                </div>
+              </div>
+          
+              <div class="row row2">
+                  <div class="col">
+                    <h4>Pizza</h4>
+                    <div class="menu-items">
+                      <p>Small ........................................ Rs. 600 </p>
+                      <p>Medium .................................. Rs. 1200</p>
+                      <p>Large ........................................ Rs. 1800</p>
+                    </div>    
+                  </div>
+                  <div class="col">
+                    <h4>Crust</h4>
+                    <div class="menu-items">
+                      <p>Crispy ...................................... Rs. 200 </p>
+                      <p>Stuffed .................................... Rs. 190</p>
+                      <p>Gluten Free ........................... Rs. 300</p>
+                    </div>  
+                  </div>
+                  <div class="col">
+                   <h4>Topping</h4>
+                   <div class="menu-items">
+                      <p>Pepperoni ................................. Rs. 300 </p>
+                      <p>Sausage ..................................... Rs. 230</p>
+                      <p>Bacon .......................................... Rs. 340</p>
+                      <p>Green Peppers ......................... Rs. 190</p>
+                    </div>  
+                  </div>
+                </div>
+          </div>
+        </section>
+<!-- ORDER SECTION --> 
+<section id="order">
+    <div class="container" style="width: 1000px;">
+      <h2>Get your Order</h2>
+      <h1>PLACE YOUR <span>ORDER</span></h1>
+
+      <div class="row row1">
+        <div class="col-md-5 col-12">
+
+            <form id="new-order">
+                <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Pizza</label>
+                    <div class="col-sm-9">
+                      <select class="custom-select mr-sm-2" id="pizza-type" oninvalid="this.setCustomValidity('Please select Pizza Type in the list')" oninput="this.setCustomValidity('')" required>
+                          <option value="">Choose pizza ...</option>
+                          <option value="FarmhousePizza">FarmHouse Pizza</option>
+                          <option value="ChunkyChickenPizza">Chunky Chicken Pizza</option>
+                          <option value="PeppyPaneerPizza">Peppy Paneer Pizza</option>
+                          <option value="CornCheesePizza">Corn & Cheese Pizza</option>
+                          <option value="IndianTandooriPaneerPizza">Indian Tandoori Paneer Pizza</option>
+                          <option value="PaneerMakhniPizza">Paneer Makhni Pizza</option>
+                      </select>
+                    </div>
+                  </div>
+
+                <div class="form-group row">
+                  <label class="col-sm-3 col-form-label">Size</label>
+                  <div class="col-sm-9">
+                    <select class="custom-select mr-sm-2" id="pizza-size" oninvalid="this.setCustomValidity('Please select Pizza Size in the list')" oninput="this.setCustomValidity('')" required>
+                        <option value="">Choose pizza size...</option>
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                  </div>
+                </div>
+               
+                <div class="form-group row mt-5">
+                    <label class="col-sm-3 col-form-label">Crust</label>
+                    <div class="col-sm-9">
+                      <select class="custom-select mr-sm-2" id="crust" oninvalid="this.setCustomValidity('Please select Crust in the list')" oninput="this.setCustomValidity('')" required> 
+                          <option value="">Choose Crust...</option>
+                          <option value="Crispy">Crispy</option>
+                          <option value="Stuffed">Stuffed</option>
+                          <option value="Gluten_Free">Gluten-free</option>
+                      </select>
+                    </div>
+                </div>
+
+                <div class="form-group row mt-5">
+                    <label class="col-sm-3 col-form-label">Topping(s)</label>
+                    <div class="col-sm-9">
+                        <div class="form-check" id="new-topping">
+                            <input class="form-check-input" type="checkbox" value="Pepperoni" id="topping">
+                            <label class="form-check-label">Pepperoni </label>
+                        </div>
+                        <div class="form-check" id="new-topping">
+                            <input class="form-check-input" type="checkbox" value="Sausage" id="topping">
+                            <label class="form-check-label">Sausage</label>
+                        </div>
+                        <div class="form-check" id="new-topping">
+                            <input class="form-check-input" type="checkbox" value="Bacon" id="topping" >
+                            <label class="form-check-label">Bacon</label>
+                        </div>
+
+                        <div class="form-check" id="new-topping">
+                            <input class="form-check-input" type="checkbox" value="Green_Peppers" id="topping">
+                            <label class="form-check-label">Green Peppers</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-sm-3 col-form-label"></label>
+                    <div class="col-sm-9 text">
+                      <button type="submit" class="btn btn-primary order-button">Place Order</button>
+                    </div>
+                  </div>
+            </form>  
+        </div>
+
+           <!-- start of second column -->
+        <div class="col-md-7 col-12 order-col2">
+          <div id="col2-img">  <!---->
+            <img src="./img/bg.jpg" height="400px" width="700px">
+          </div> <!---->
+          <div id="order-details"> <!-- start of orders-->
+              <table class="table orderDetailsTable">
+                <thead>
+                    <caption>Order Details</caption>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Pizza Size</th>
+                    <th scope="col">Crust</th>
+                    <th scope="col">Topping</th>
+                    <th scope="col">Sub Total</th>
+                  </tr>
+                </thead>
+                <tbody id="order-body">
+                                <!-- order details displayed here -->
+                </tbody>
+              </table>
+
+              <div class="totals">
+                  <h6 >Total Costs :<span class="totalCost"> </span></h6>
+              </div>
+               
+             
+              <hr>
+              <div class="row p-2">
+                  <div class="col-md-5 col-12 mt-3 pl-5">
+                    <div class="check-delivery">
+                        <input class="form-check-input" type="checkbox" value="delivery-checkbox" id="delivery-checkbox" data-toggle="modal" data-target="#addressModal">
+                        <label class="form-check-label">I want it Delivered! </label>
+                    </div>  
+                  </div>
+                  <div class="col-md-7 col-12">
+                 <!-- Button trigger address-modal -->
+                    <!-- <button type="button" class="btn btn-primary addAddress mt-3" data-toggle="modal" data-target="#addressModal">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i> Add Delivery Address
+                    </button> -->
+                 <!-- Button trigger checkout-modal -->
+                    <button type="button" class="btn btn-success checkout mt-3" data-toggle="modal" data-target="#checkoutModal">
+                        <i class="fa fa-shopping-basket" aria-hidden="true" ></i> Proceed to Checkout</button>
+                  </div>
+              </div>
+                              
+                <!--Start of Address modal form -->
+                <div class="modal fade address-modal" id="addressModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Delivery Address</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="address">
+                              <div class="form-group"> 
+                                <h6>Delivery charges : 150/-</h6>
+                              </div> 
+                                <div class="form-group"> 
+                                  <label for="new-street">Street</label> 
+                                  <input type="text" class="form-control street" oninvalid="this.setCustomValidity('Please add the street!')" oninput="this.setCustomValidity('')" required>
+                                </div> 
+                                <div class="form-group"> 
+                                  <label for="new-town">Town(eg Pune, Nasik...)</label> 
+                                  <input type="text" class="form-control town" oninvalid="this.setCustomValidity('Please add your town!')" oninput="this.setCustomValidity('')" required>
+                                </div> 
+                                <div class="form-group"> 
+                                  <label for="new-county">Country</label> 
+                                  <input type="text" class="form-control county" value="India" readonly> 
+                                </div>    
+                                <button type="submit" class="btn btn-dark add-address">Save Address</button>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+              <!-- end of address modal form-->
+
+                <!-- start of checkout Modal -->
+                <div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Order number <span class="font-weight-bold order-number">j</span></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table">
+                            <thead>
+                                <caption class="text-center">Summary</caption>
+                            </thead>
+                            <tbody id="summary-body">
+                                            <!-- summary details displayed here -->
+                                <tr class="deliveryAddressRow"><td>Delivery Address</td><td class="deliveryAddress"></td></tr>
+                                <tr><td>Total Order Costs</td><td class="totalOrderCosts"></td></tr>
+                                <tr class="deliveryFeeRow"><td>Delivery Fee </td><td class="deliveryFee">Rs. "+ deliveryFee + "</td></tr>
+                                <tr class="font-weight-bold"><td>Grand Total</td><td class="grandTotal">Rs. " + (totalCost + totalToppingCost+deliveryFee) + "</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <!-- end of checkout modal form-->
+              
+
+          </div> <!-- end of orders-->
+        </div>
+        <!-- end of second column -->
+
+      </div>
+    </div>
+    </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <script src="main.js" ></script>
+
+    <div class="sidebar" style="width: 200px; background-color: transparent; ">
+      <a href="home.html">Home </a>
+      <a href="menu.html"><u> Menu </u></a>
+      <a href="about.html">About US</a>
+      <a href="contactus.html">Contact US</a>
+    </div>
+    </body>
+</html>

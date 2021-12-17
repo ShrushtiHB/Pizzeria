@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    align-items: center;
+}
+.h3 {
+    font-family:"Segoe UI";
+    font-weight:400;
+    margin:10px 0;
+    background-color: #b3f3e098;
+    color: rgb(255, 2, 2);
+    text-transform: uppercase;
+    font-size: 50px;
+
+}
+.container {
+    width:100%;
+    height:100%;
+    border:2px solid transparent;
+    margin: 0 auto;
+    padding:10px;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    color: rgb(253, 0, 0);
+}
+.container2{
+    width:33.33%;
+    height:100%;
+    border:2px solid transparent;
+    margin: 0 auto;
+    padding:10px;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    color: rgb(253, 0, 0);
+}
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    font-size: 20px;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    color: red;
+    border-radius: 30px;
+}
+.row {
+    position: relative;
+    height:250px;
+    width:100%;
+    padding:10px;
+    margin-bottom: 2em;
+    margin-right: -15px;
+    margin-left: -15px;
+    align-items: center;
+}
+.row2{
+    margin: 2em 1em;
+}
+.col {
+    border:2px solid gray;
+    width:16%;
+    align-items: center;
+    float:left;
+    font-style: normal;
+    height:100%;
+    color: rgb(255, 253, 253);
+}
+.col:hover{
+    background-color: maroon;
+    color: white;
+}
+.img-fluid{
+    padding-top: 20px;
+    position: center;
+    max-width:100%;
+    max-height:70%;
+    height:auto;
+    background-image: url(./img/flower.png)
+}
+.con {
+    width:100%;
+    height:50%;
+    border:1px solid transparent;
+    margin: 0 auto;
+    padding:10px;
+    position: relative;
+    align-items: center;
+    color: rgb(253, 0, 0);
+}
+.col2 {
+    border:2px solid gray;
+    width:50%;
+    align-items: center;
+    float:left;
+    height:100%;
+    padding-right:15px;
+    padding-left:15px;
+    font-weight: 300;
+    font-size: 40px;
+    color: rgb(255, 253, 253);
+}
+.menu-items{
+    font-size: 20px;
+}
+.form-group{
+    font-size: 40px;
+    float: left;
+    padding-right:30px;
+    width:100%;
+    margin-bottom: 1rem;
+}
+.col3 {
+    border:2px solid gray;
+    width:100%;
+    height:100%;
+    padding-right:15px;
+    padding-left:15px;
+    padding-top: 20px;
+    color: rgb(255, 253, 253);
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+}
+#order table #order-body
+{
+    counter-reset: row-num;
+}
+
+table.orderDetailsTable tr {
+  counter-increment: row-num;
+  text-size-adjust:initial;
+}
+table.orderDetailsTable tr td:first-child::before 
+{
+    content: counter(row-num) ". ";
+}
+
+@media screen and (max-width: 650px) {
+    .img-fluid {
+      width: 16%;
+      display: block;
+    }
+    .col{
+        max-width: 16.6%;
+    }
+  }

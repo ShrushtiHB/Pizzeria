@@ -1,0 +1,118 @@
+*{
+    color: #fff;
+}
+body{        
+    padding-top: 60px;
+    padding-bottom: 40px;
+    image-resolution: 10%;
+    height: 100%;
+    width: 100%;
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color:#464646;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.fixed-header{
+    width: 100%;
+    position: fixed;       
+    background: transparent;
+    padding: 10px 0;
+    color: #fff;
+}
+.fixed-footer{
+    width: 100%;
+    position: fixed;       
+    background: rgba(0, 0, 0, 0);
+    padding: 10px 0;
+    color: #fff;
+}
+.fixed-header{
+    top: 0;
+    height: 7%;
+}
+.fixed-footer{
+    bottom: 0;
+    height: 5%;
+}    
+nav a{
+    float: right;
+    color: rgb(255, 255, 255);
+    padding: 7px 15px;
+    text-decoration: solid;
+    font-size: 40px;
+}
+.container p{
+    line-height: 200px;
+}
+.logo{
+    height: 150px;
+    width: 150px;
+    float: left;
+}
+.h1 {
+    font-family:"Segoe UI";
+    font-weight:700;
+    margin:10px 0;
+    text-transform: uppercase;
+    color: rgb(241, 204, 38);
+    font-size: 130px;
+}
+.h2 {
+    font-family:"Segoe UI";
+    font-weight:700;
+    margin:10px 0;
+    text-transform: uppercase;
+    color: rgb(243, 242, 240);
+    font-size: 130px;
+}
+.h3 {
+    font-family:"Segoe UI";
+    font-weight:400;
+    margin:10px 0;
+    background-color: #b3f3e098;
+    color: rgb(255, 2, 2);
+    text-transform: uppercase;
+    font-size: 50px;
+}
+.button {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 2px;
+    background-color: #4CAF50;
+    outline: none;
+    padding: 12.5px 13px;
+    border: none;
+    border-radius: 33px;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.button-logout {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 2px;
+    background-color: #f33f32;
+    outline: none;
+    padding: 12.5px 13px;
+    border: none;
+    border-radius: 33px;
+    font-size: 20px;
+}
+@media screen and (max-width: 10px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
+    .body{
+        background-image: url(./img/bg.jpg);
+    }
+
+}
